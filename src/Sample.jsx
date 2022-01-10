@@ -8,7 +8,7 @@ export default class Sample extends React.Component {
       return (
         <div>
           <h2>Hello this is {this.state.name}</h2>
-          <button onClick={this.click}>click</button>
+          <button onClick={this.click} color ="red">click me</button>
           {this.props.val}
         </div>
       );
