@@ -14,6 +14,6 @@ export default class Sample extends React.Component {
       );
     }
     click = ()=>{
-      this.setState({name:"Name changed"})
+      this.setState({name:"Name changed ok"})
     }
   }
