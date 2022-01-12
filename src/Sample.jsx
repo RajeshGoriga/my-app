@@ -1,4 +1,5 @@
 import React from "react";
+import State from "./State";
 export default class Sample extends React.Component {
   constructor(props) {
     super(props);
@@ -15,7 +16,7 @@ export default class Sample extends React.Component {
     return (
       <div>
         <h2>Hello this is Table</h2>
-        
+        <State/>
         <ul>
           {data &&
             data.map((item) => (
