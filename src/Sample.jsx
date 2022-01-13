@@ -16,16 +16,17 @@ export default class Sample extends React.Component {
     return (
       <div>
         <h2>Hello this is Table</h2>
-        <State/>
-        <ul>
+        <State />
+        <table>
           {data &&
             data.map((item) => (
               <>
-                <li>{item.title}</li>
-                <li>{item.id}</li>
+                
+                  <tr>{item.title}</tr>
+                  <td>{item.id}</td>
               </>
             ))}
-        </ul>
+        </table>
       </div>
     );
   }

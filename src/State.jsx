@@ -8,12 +8,11 @@ export default class State extends React.Component {
             name: "ramya"
         };
     }
-
     render() {
         return (
             <div>
-                <p>{this.state.id}</p>
-                <p>{this.state.name}</p>
+                {this.state.id}
+                {this.state.name}
             </div>
         );
     }
