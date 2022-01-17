@@ -12,10 +12,10 @@ export default class Sample extends React.Component {
   }
   render() {
     const { data } = this.state;
-    console.log(data)
     return (
       <div>
         <h2>Hello this is Table</h2>
+        <a href="/">Goback</a>
         <State />
         <table>
           {data &&
