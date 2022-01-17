@@ -14,5 +14,6 @@ class Header extends React.Component {
         );
     }
 }
+
 ReactDom.render (<Header favcol ="yellow"/>,document.getElementById('root'));
 
