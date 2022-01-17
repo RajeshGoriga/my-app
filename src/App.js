@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
-import Sample from './Sample'
+import Sample from './testtable'
+// import Sampletest from './Newcomponent'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function NewComp() {
     <div>
       <h1>Hello this is new component</h1>
       <Sample val={'Hello this is value'}/>
+      {/* <Sampletest val={'Hello this is value'}/> */}
     </div>
   );
 }
