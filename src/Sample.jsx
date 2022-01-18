@@ -1,6 +1,6 @@
 import React from "react";
 import State from "./State";
-import HocExample from "./HocExample"
+import HocExample from "./HocExample";
 class SampleC extends React.PureComponent {
   constructor(props) {
     super(props);
@@ -19,12 +19,17 @@ class SampleC extends React.PureComponent {
         <a href="/">Goback</a>
         <State />
         <table>
+          <tr>
+            <th>ID</th>
+            <th>Title</th>
+          </tr>
           {data &&
             data.map((item) => (
               <>
-                
-                  <tr>{item.title}</tr>
+                <tr>
                   <td>{item.id}</td>
+                  <td>{item.title}</td>
+                </tr>
               </>
             ))}
         </table>
@@ -34,9 +39,9 @@ class SampleC extends React.PureComponent {
 
   click = () => {
     this.setState({ name: "Name changed ok" });
-    alert('Hello this is clicked')
+    alert("Hello this is clicked");
   };
 }
 
-const Sample=HocExample(SampleC)
-export default Sample
+const Sample = HocExample(SampleC);
+export default Sample;
