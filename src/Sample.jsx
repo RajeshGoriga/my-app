@@ -1,6 +1,7 @@
 import React from "react";
 import State from "./State";
-export default class Sample extends React.Component {
+import HocExample from "./HocExample"
+class SampleC extends React.PureComponent {
   constructor(props) {
     super(props);
     this.state = { data: undefined };
@@ -36,3 +37,6 @@ export default class Sample extends React.Component {
     alert('Hello this is clicked')
   };
 }
+
+const Sample=HocExample(SampleC)
+export default Sample
