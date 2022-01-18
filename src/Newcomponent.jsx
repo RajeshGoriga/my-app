@@ -1,5 +1,6 @@
 import React from "react";
 import Sample from "./Sample";
+import "./App.css";
 export default class Sample extends React.Component {
     constructor(props) {
         super(props);
@@ -17,15 +18,17 @@ export default class Sample extends React.Component {
             <div>
                 <h2>Hello this is Table</h2>
                 <State />
-                    {data &&
-                        data.map((item) => (
-                            <>
-                                <table>    
-                                <td>{item.title}</td>
-                                <td>{item.id}</td>
-                                </table>
-                            </>
-                        ))}
+                {data &&
+                    data.map((item) => (
+                        <>
+                            <table style ="width=100%">
+                                   <tr>
+                                      <td> {item.title}</td>
+                                     <td>{item.id}</td>    
+                                   </tr>
+                            </table>
+                        </>
+                    ))}
             </div>
         );
     }

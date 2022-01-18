@@ -14,7 +14,8 @@ export default class  StateLiftParent extends React.Component {
           text={this.state.text}
           handleTextChange={this.handleTextChange}
         />
-        OutPut: {this.state.text}
+        Main page: {this.state.text}
+        <a href="/">Go to main page</a>
       </div>
     );
   }
