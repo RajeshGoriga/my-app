@@ -5,7 +5,7 @@ export default class State extends React.Component {
         super()
         this.state = {
             id: 1,
-            name: "ramya"
+            name: "Ramya"
         };
     }
     render() {
