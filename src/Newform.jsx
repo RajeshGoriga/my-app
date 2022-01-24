@@ -1,10 +1,12 @@
 import { useState, createContext, useContext } from "react";
 import "./App.css";
+import { useNavigate } from "react-router-dom";
 const UserContext = createContext();
 function Newform() {
+  const navigate = useNavigate();
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert("You have submitted the form.");
+    navigate('/')
   };
 
   const handleChange = (event)=>{
