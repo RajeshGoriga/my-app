@@ -1,36 +1,57 @@
 import React from "react";
 import "./App.css";
-import Sample from "./Sample";
+import { Button } from "react-bootstrap";
+import Foremployer from "./Foremployer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import StateLiftParent from "./StateLiftParent";
-import StyledComponent from "./HooksExample";
-import Newform from './Newform'
+import ForRecruiter from "./ForRecruiter";
+import Forjobseeker from "./Forjobseeker";
+import FAQS from "./FAQS";
+import Aboutus from './Aboutus';
+import Login from './Login';
+import Registration from "./Registration";
+import Footer from "./Footer";
+import Header from './Header';
+import Sucess from "./Sucess";
+import Asection from "./Asection";
+
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<NewComp />}></Route>
-        <Route path="/sample" element={<Sample />} />
-        <Route path="/statechange" element={<StateLiftParent />} />
-        <Route path="/hooks" element={<StyledComponent />} />
-        <Route path="/form" element={<Newform />} />
+        <Route path="/" element={<Home />}></Route>
+        <Route path="/Foremployer" element={<Foremployer  />} />
+        <Route path="/ForRecruiter" element={< ForRecruiter />} />
+        <Route path="/Forjobseeker" element={<Forjobseeker />} />
+      <Route path ="/Aboutus" element={<Aboutus/>}/>
+      <Route path ="/FAQS" element ={<FAQS />}/>
+      <Route path ="/Login" element ={<Login/>}/>
+      <Route path ="/Registration" element ={<Registration/>}/>
       </Routes>
     </BrowserRouter>
+    
   );
 }
 
-function NewComp() {
+function Home() {
   return (
     <div>
-      <h1>Hello this is new component</h1>
       <ul>
-      <li><a href="/sample"> This is sample</a></li>
-      <li><a href="/statechange" >State change</a></li>
-      <li><a href="/hooks" >Hooks Example</a></li>
-      <li><a href="/form" >FOrm Example</a></li>
+      <h2> Infosecure</h2>
+      <li><a href="/Foremployer">For employer</a></li>
+      <li><a href="/ForRecruiter" >For Recruiter</a></li>
+      <li><a href="/Forjobseeker" >For jobseeker</a></li>
+      <li><a href ="Aboutus">About us</a></li>
+      <li><a href="/FAQS">FAQ's</a></li>
+      <li><a href="/Login">Login</a></li>
+      <li><a href ="Registration"> <Button>Registration</Button></a></li>
       </ul>
+      <Header/>
+      <Asection/><br/>
+      <Sucess/><br/>
+      <Footer/>
     </div>
+    
   );
 }
 
